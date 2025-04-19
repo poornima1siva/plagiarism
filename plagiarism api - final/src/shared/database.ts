@@ -3,7 +3,7 @@ import { google } from "googleapis";
 import path from 'path';
 
 
-const MONGODB_URI = "mongodb+srv://zapproject:zap@cluster0.d690f.mongodb.net/";
+const MONGODB_URI = "***";
 const DB_NAME = "plagiarism_checker";
 
 export let cachedDb: Db | null = null;

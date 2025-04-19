@@ -1,0 +1,51 @@
+<div class="body">
+  <div class="container">
+    <h1>Plagiarism Results</h1>
+
+    <h2>Selected Document: {{ documentName }}</h2>
+
+    <!-- Display the table only if there are plagiarism results -->
+    @if (plagiarismResults.length > 0) {
+      <table>
+        <thead>
+          <tr>
+            <th>Compared Document (Doc2)</th>
+            <th>Similarity (%)</th>
+          </tr>
+        </thead>
+        <tbody>
+          @for (result of plagiarismResults; track result.comparison) {
+            <tr>
+              <td>{{ result.comparison }}</td>
+              <td>{{ result.similarity }}%</td>
+            </tr>
+          }
+        </tbody>
+      </table>
+
+      <!-- Plagiarism Warning Message -->
+      @for (result of plagiarismResults; track result.comparison) {
+        @if (result.similarity > 75) {
+          <div class="warning">
+            {{ checkPlagiarismWarning() }}
+            <p><strong>{{ plagiarismMessage }}</strong></p>
+          </div>
+        }
+      }
+
+      <!-- "Show Chart" button below the table -->
+      <button (click)="showPlagiarismChart()">Show Chart</button>
+    } @else {
+      <p>No plagiarism detected.</p>
+    }
+
+    <!-- Chart Container (Shown only when showChart is true) -->
+    @if (showChart) {
+      <div class="chart-container">
+        <canvas id="plagiarismChart"></canvas>
+        <button (click)="closeChart()">Close Chart</button>
+      </div>
+    }
+  </div>
+</div>
+<app-sidebar></app-sidebar>

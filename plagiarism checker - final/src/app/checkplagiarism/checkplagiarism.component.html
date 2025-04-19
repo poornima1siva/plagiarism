@@ -1,0 +1,45 @@
+<div class="body">
+
+<div class="container">
+
+
+  <!-- Uploaded Documents List -->
+  <div class="document-list">
+    <h2>Uploaded Documents</h2>
+    <ul>
+      @for (doc of uploadedDocuments; track doc._id) {
+        <li>
+          <span>{{ doc.name }}</span>
+          <button (click)="checkPlagiarism(doc._id, doc.name)">Check Plagiarism</button>
+        </li>
+      }
+    </ul>
+  </div>
+
+  <!-- Plagiarism Results -->
+  @if (plagiarismResults.length > 0) 
+  {
+    <div class="results">
+      <h2>Plagiarism Results</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Compared Documents</th>
+            <th>Similarity (%)</th>
+          </tr>
+        </thead>
+        <tbody>
+          @for (result of plagiarismResults; track result.comparison)
+          {
+            <tr>
+              <td>{{ result.comparison }}</td>
+              <td>{{ result.similarity }}%</td>
+            </tr>
+          }
+        </tbody>
+      </table>
+    </div>
+  }
+</div>
+</div>
+<app-sidebar></app-sidebar>

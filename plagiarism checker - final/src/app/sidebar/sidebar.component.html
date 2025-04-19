@@ -1,0 +1,20 @@
+
+<button class="toggle-btn" (click)="toggleSidebar()">☰</button>
+<div class="sidebar" [class.open]="isSidebarOpen">
+  <!-- Dashboard Title -->
+  <button class="close-btn" (click)="toggleSidebar()">✖</button>
+  <div class="dashboard-title">Dashboard</div>
+
+  <!-- Sidebar Navigation -->
+  <nav>
+    <ul class="menu">
+      @for (link of sidebarLinks ; track link) {
+        <li>
+          <a routerLink="{{ link.route }}" class="sidebar-link">
+            <i class="{{ link.icon }}"></i> {{ link.label }}
+          </a>
+        </li>
+      }
+    </ul>
+  </nav>
+</div>

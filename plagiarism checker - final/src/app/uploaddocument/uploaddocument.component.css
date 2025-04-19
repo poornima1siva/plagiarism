@@ -1,0 +1,232 @@
+/* Full-page Centering */
+.body {
+  background: url('/img9.png') no-repeat center center fixed;
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+/* Centered Container */
+.upload-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 130px;
+  height: 130;
+  padding-top: 160x; 
+  max-width: 900px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.upload-container {
+  background: white;
+  padding: 30px;
+  padding-top: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  width: 400px;
+max-width: 900px;
+padding-left: 30px;
+  padding-right: 30px;
+}
+
+
+/* Heading */
+h2 {
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* Toggle Buttons */
+.upload-toggle {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  margin-bottom: 15px;
+}
+
+.upload-toggle button {
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  background-color: #ddd;
+  font-size: 20px;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+
+.upload-toggle button.active {
+  background-color: #2a2c2f;
+  color: white;
+}
+
+/* Upload Box */
+.upload-box {
+  border: 2px dashed #bbb;
+  padding: 15px;
+  background: #f9f9f9;
+  border-radius: 10px;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.upload-box:hover {
+  border-color: #4CAF50;
+}
+
+/* Upload Button */
+.upload-btn {
+  width: 100%;
+  padding: 12px;
+  background: #28a745;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: 0.3s;
+}
+
+.upload-btn:disabled {
+  background: #ccc;
+  cursor: not-allowed;
+}
+
+/* Upload Message */
+.upload-message {
+  margin-top: 15px;
+  font-weight: bold;
+  color: green;
+}
+
+/* Popup Background */
+.popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Popup Content */
+.popup-content {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  width: 300px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  position: relative;
+}
+
+.close {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-size: 20px;
+  cursor: pointer;
+}
+/* Sidebar Hidden by Default */
+.sidebar {
+  height: 100vh;
+  width: 0;
+  background-color: #18254b;
+  color: white;
+  position: fixed;
+  top: 0;
+  left: 0;
+  overflow-x: hidden;
+  transition: width 0.3s ease-in-out;
+  padding-top: 2rem;
+}
+
+/* Sidebar Open */
+.sidebar.open {
+  width: 16rem;
+  padding: 2rem;
+}
+
+/* Close Button */
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: transparent;
+  color: white;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.close-btn:hover {
+  color: #ff4c4c; /* Red on hover */
+}
+
+/* Toggle Button */
+.toggle-btn {
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  background: #18254b;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  font-size: 20px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.toggle-btn:hover {
+  background: #2a3f73;
+}
+.menu {
+  list-style: none;
+  padding: 20;
+  margin: 10;
+}
+
+/* Sidebar Menu Items */
+.menu li {
+  margin-bottom: 30px; /* Adds spacing between each item */
+}
+/* Dashboard Title */
+.dashboard-title {
+  font-size: 22px;
+  font-weight: bold;
+  text-align: center;
+  padding: 15px 0;
+  color: #ffffff;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  position: relative;
+}
+
+/* Optional: Add a subtle shadow for better visibility */
+.dashboard-title::after {
+  content: "";
+  display: block;
+  width: 50%;
+  height: 3px;
+  margin: 5px auto 0;
+  border-radius: 2px;
+}
+
+/* Responsive:*/
+@media (max-width: 768px)
+ {
+  .dashboard-title {
+    font-size: 18px;
+    padding: 12px 0;
+  }
+}

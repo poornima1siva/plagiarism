@@ -1,0 +1,112 @@
+/* 🌟 General Styles */
+.body {
+    background: url('/img21.jpg') no-repeat center center fixed;
+    background-size: cover;
+    height: 150vh;
+    margin: 20;
+    padding: 20;
+  background-size: cover; 
+}
+
+h2, h3 {
+  color: #050505; /* Bright white text */
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 15px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+   background: rgba(245, 240, 240, 0.835);
+  
+}
+
+/* 🌟 Upload Message */
+p {
+  text-align: center;
+  font-size: 18px;
+  color: #38bdf8; /* Sky blue */
+  background: rgba(255, 255, 255, 0.1);
+  padding: 10px;
+  border-radius: 8px;
+  width: fit-content;
+  margin: 10px auto;
+  font-weight: 500;
+}
+
+/* 🌟 Uploaded Documents List */
+ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+li {
+  background:rgba(253, 254, 255, 0.9); /* Dark blue glass effect */
+  backdrop-filter: blur(8px);
+  color: #0c0d0f;
+  font-size: 18px;
+  font-weight: 500;
+  width: 80%;
+  max-width: 500px;
+  padding: 12px 18px;
+  margin-bottom: 12px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0px 6px 12px rgba(157, 152, 152, 0.555);
+  transition: transform 0.2s ease-in-out;
+}
+
+li:hover {
+  transform: translateY(-3px);
+  background: rgba(133, 160, 217, 0.9);
+}
+
+/* 🌟 Check Plagiarism Button */
+button {
+  padding: 10px 14px;
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+  background: #090909;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s ease-in-out, transform 0.2s;
+}
+
+button:hover {
+  background: #1e90ff;
+  transform: scale(1.05);
+}
+
+/* 🌟 Plagiarism Check Results */
+.strong {
+  color: #38bdf8;
+  font-weight: bold;
+}
+
+/* 🌟 No Results Message */
+.no-results {
+  text-align: center;
+  font-size: 18px;
+  color: #ff5a5a;
+  margin-top: 20px;
+}
+
+/* 🌟 Responsive Design */
+@media (max-width: 600px) {
+  li {
+    width: 90%;
+    font-size: 16px;
+  }
+
+  button {
+    padding: 8px 12px;
+    font-size: 14px;
+  }
+}

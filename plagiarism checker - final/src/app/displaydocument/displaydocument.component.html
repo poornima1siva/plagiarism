@@ -1,0 +1,17 @@
+<div class="body">
+@if(uploadMessage)
+{
+  <p>{{ uploadMessage }}</p>
+}
+
+<h3>Uploaded Documents</h3>
+
+<ul>
+  @for (document of uploadedDocuments; track document) {
+    <li>
+      {{ document.name }} 
+    </li>
+  }
+</ul>
+</div>
+<app-sidebar></app-sidebar>

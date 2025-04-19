@@ -1,0 +1,29 @@
+<div class="body">
+<div class="container">
+  <h1>Uploaded Documents</h1>
+
+  @if (uploadedDocuments.length > 0) {
+    <table>
+      <thead>
+        <tr>
+          <th>Document Name</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody>
+        @for (document of uploadedDocuments; track document._id) {
+          <tr>
+            <td>{{ document.name }}</td>
+            <td>
+              <button (click)="deleteDocument(document._id)" class="delete-btn">Delete</button>
+            </td>
+          </tr>
+        }
+      </tbody>
+    </table>
+  } @else {
+    <p>No documents uploaded yet.</p>
+  }
+</div>
+</div>
+<app-sidebar></app-sidebar>

@@ -1,0 +1,13 @@
+{
+  "type": "service_account",
+  "project_id": "rich-stratum-444313-u6",
+  "private_key_id": "3ae3be24d889fe18b44c20fc43d18da706e9ef6f",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQDNDIayan9w/fpW\nhS3qMEYhi6u6T0OhodoOCUFJAMi2ChmJuINnd7RX2OY4SU2iSwoxjW9sS4pmxPH5\nsLaFtdtSVp2fajYp9WgY3glnUqqMGajXUa7yYkkF24RPyBxCCsq7dBIFoZu+kJ2g\nenISG2HOm0Qe+2J7w/yyeW1sDGNYADpRvb1uTQDTUtfN8I5Q73tr5x9SkpExURHx\n/oIze36BeYyN05wVzo24WJLEKYM/vNF0zMi4sba7/AoeB5FQMGY2UsrcfiuYdyZj\nAxtn4H5J0bQM1leJXw3poNlhmRvi68uIG8170wrPLNWBa5VPOR/tz3vsLtpyhKQm\n3OXfiRCnAgMBAAECggEAC0cPl3uFA91sKdsMUe+Sw+CPMuGOKjMhL5lxtkatQ1nd\n2rXDwGqUiCpdSyY4916iMmSBhtbGx204k8+U0ljUtbwe0jhAv2EIdymrIbwptifp\nIeKTuTAPrRtMNSkf6L/4M4QoQ5gGXV5N1Rg28uj/oaHnhr6zxXPbj6NfEczCoAHV\n220qHCU5PlO17L4Roso+9fFloJWtOkbQdRGNJosbH5CNRRmcw3+xMO3GW6kAtVnQ\nwTwY0SBxs0G45/0gEWC0e/M+aI/h/LoDBDGEDIjYIuyTyqD2Hv81kgKHiMPqeXWT\nQU1s9ty4v/PCVe0XAoanLowAjdIsqJgmyoDVmoyTrQKBgQD+pBuNb+nGuHabbIt5\nBspOTIKjuGM7bTft6mzHGZmVpV0kQxJaSQ+GlLiGLiZr4cw7qr1YVxjQndW8KQp4\nor4orGhuKVH2Xs0jP0ELxwY5NbIxuh4I+9Npyl/RPdjF/Qu2qbKLH76pbXtVPDy8\n38NwfqqJGcsrhRDidSqllVKNTQKBgQDOJKpaOt/8T9ihoEkb55wxHzmdqKbhAjRK\nSI3YNqnuotGrCs7CzdCOkfX3P5Z40erlVKvBZt6wzR5fu6vg2o/CjXNNnxaT/y1i\n5hKneHLQTH/oFV/LlzdweSlFjZQAJbiK2HfMwwNl6imCI6FWhv32XwtxwFVfrtwG\nig6Sk9mrwwKBgDsXCe3AUpdyptNaVOM42CljR82GNEDOD3R+Oc/Z+PHo9bw8dD3P\nRnMMf+VjQDc4ppQSAu5FB9UhSz/mpi9oVIhLudAWdpadWS0cuJNrE96ivz8a2W1s\nQpsCA0oi9/K5zcYNiwkNzMi0RzJ4T//kTQ4F1r0J50OqFUj3t3XFOOrhAoGBAKN6\ndlJqIFlS5QSAPZpQmhBmp+V86yLEAb3rPfn6l9b07nvLbV8Vo1B9Nmem2Ojl6HeI\nJ1GQCAiEEpNvHIaMLbfnP0qOYHRryI2G0cJYBg1krYba9IZbXI7oty8+cOGRCIGr\n243aFabMBbD8GqWpFlw80bGbCtl/rWPONnJNqDDLAoGBAOx0FHgpkfjq8ZFnLmNx\nR0xmOB63g0IWqFFrJ0KpYeR3HtPaLOaocyPsHjna1tkzLqEvmhe5L66D0jsn9X/o\n8nmgg7vNqTf0AyW8PVOQqRI3k65YPOdVIZnpp41synrdXE74J3RlkExSB2zshNru\nLA96ZnY5xr8fe7SI5lC7xB6d\n-----END PRIVATE KEY-----\n",
+  "client_email": "poorni@rich-stratum-444313-u6.iam.gserviceaccount.com",
+  "client_id": "116367439510697823257",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/poorni%40rich-stratum-444313-u6.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}

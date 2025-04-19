@@ -1,0 +1,55 @@
+/* Ensure full-screen background */
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.body {
+  background: url('/img4.jpg') no-repeat center center fixed;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 150vh;
+}
+
+/* Container styling */
+.container {
+  width: 60%;
+  margin: auto;
+  text-align: center;
+  background-color: #f4f4f4;/* Transparent background for readability */
+  padding: 20px;
+  border-radius: 10px;
+}
+
+/* Table styling */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+th, td {
+  border: 1px solid #453e60;
+  padding: 10px;
+}
+
+th {
+  background-color: #f4f4f4;
+}
+
+/* Button styling */
+.delete-btn {
+  background-color: rgb(19, 19, 20);
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.delete-btn:hover {
+  background-color: darkred;
+}

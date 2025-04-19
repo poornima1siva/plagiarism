@@ -1,0 +1,59 @@
+<div class="body">
+<div class="upload-wrapper">
+  <div class="upload-container">
+    <h2>Upload Document</h2>
+
+    <!-- Upload Options -->
+    <div class="upload-toggle">
+      <button [class.active]="uploadSource === 'local'" (click)="setUploadSource('local')">
+        Local Upload
+      </button>
+      <button [class.active]="uploadSource === 'google'" (click)="setUploadSource('google')">
+        Google Classroom
+      </button>
+    </div>
+
+    <!-- File Upload Section -->
+    @if (uploadSource === 'local') {
+      <div class="upload-box">
+        <input type="file" (change)="onFileSelected($event)" />
+        @if (selectedFile) {
+          <p>Selected File: <b>{{ fileName }}</b></p>
+        }
+      </div>
+    }
+
+    <!-- Google Classroom Upload -->
+    @if (uploadSource === 'google') {
+      <div class="upload-box">
+        <button (click)="connectToGoogleClassroom()">Connect to Google Classroom</button>
+        @if (selectedGoogleFile) {
+          <p>Selected File: <b>{{ selectedGoogleFile }}</b></p>
+        }
+      </div>
+    }
+
+    <!-- Upload Button -->
+    <button class="upload-btn" (click)="uploadDocument($event)" [disabled]="!selectedFile && !selectedGoogleFile">
+      Upload
+    </button>
+
+    @if (uploadMessage) {
+      <p class="upload-message">{{ uploadMessage }}</p>
+    }
+
+    <!-- Success Popup -->
+    @if (showPopup) {
+      <div class="popup">
+        <div class="popup-content">
+          <span class="close" (click)="closePopup()">&times;</span>
+          <h3>Upload Successful!</h3>
+          <p>Your document has been uploaded successfully.</p>
+          <button (click)="closePopup()">OK</button>
+        </div>
+      </div>
+    }
+  </div>
+</div>
+</div>
+<app-sidebar></app-sidebar>
